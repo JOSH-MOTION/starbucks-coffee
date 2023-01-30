@@ -6,7 +6,9 @@ import pic4 from './images/pic4.png'
 import pic5 from './images/pic5.png'
 import pic6 from './images/pic6.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faSpotify , faFacebook, faPinterest, faInstagram, faYoutube, faTwitter, faInstagramSquare } from "@fortawesome/free-brands-svg-icons"
+import {faSpotify , faFacebook, faPinterest,faInstagramSquare , faYoutube, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -24,7 +26,7 @@ import {faSpotify , faFacebook, faPinterest, faInstagram, faYoutube, faTwitter, 
             <br /> 
             eGift.
             </p>
-            <button className='butn'>Buy now</button>
+            <Link to='/BuyNow'><button className='butn'>Buy now</button></Link>
 </div>
 </div>
 
@@ -162,19 +164,28 @@ import {faSpotify , faFacebook, faPinterest, faInstagram, faYoutube, faTwitter, 
       <hr />
       </center>
 
-      <div className='social'>
-        <ul>
-      <li><FontAwesomeIcon icon={faSpotify} /></li>
-      <li><FontAwesomeIcon icon={faFacebook} /></li>
-      <li><FontAwesomeIcon icon={faPinterest} /></li>
-      <li><FontAwesomeIcon icon={faInstagramSquare} /></li>
-      <li><FontAwesomeIcon icon={faYoutube} /></li>
-      <li><FontAwesomeIcon icon={faTwitter} /></li>
-      </ul>
+      <div className='footer'>
+              <div className='social'>
+                <ul className='social'>
+              <FontAwesomeIcon icon={faSpotify} style={{ height: 30, width: 30 }}/>
+              <FontAwesomeIcon icon={faFacebook} style={{ height: 30, width: 30 }}/>
+              <FontAwesomeIcon icon={faPinterest} style={{ height: 30, width: 30 }}/>
+              <FontAwesomeIcon icon={faInstagramSquare} style={{ height: 30, width: 30 }}/>
+              <FontAwesomeIcon icon={faYoutube} style={{ height: 30, width: 30 }} />
+              <FontAwesomeIcon icon={faTwitter} style={{ height: 30, width: 30 }}/>
+              </ul>
+              </div>
       </div>
-        
-      
-
+      <div className='footer2'>
+      <ul className='words'>
+        <li>Privacy Notice</li>
+        <li>|   Terms of Use</li>
+        <li>|   Do Not Share My Personal Information</li>
+        <li>|   CA Supply Chain Act</li>
+        <li>|   Cookie Preferences</li>
+      </ul>
+      <p><span>&copy;2023 Starbucks Coffee Company. All rights reserved.</span></p>
+      </div>
     </div>
     </>
   );

@@ -6,13 +6,11 @@ import {BrowserRouter as AppRouter,Routes,Route,Link,} from "react-router-dom";
   import Rewards from './Rewards';
 import Home from './Home';
 import FindStore from './FindStore';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { } from '@fortawesome/free-solid-svg-icons';
-import logo from './images/logo.png'
+import logo from './images/logo.png';
+import BuyNow from './BuyNow';
 
 
 
- 
  
 function Router() {
   return (
@@ -33,7 +31,7 @@ function Router() {
         <l1 className='nav-item'>
         <Link to="/GIFTCARD" className='nav-links'>GIFT CARDS</Link>
         </l1>
-        
+        <Link to='/BuyNow'></Link>
        
         <l1 className='nav-item'>
         <Link to="/FindStore" className='nav-link'>Find a store</Link>
@@ -50,6 +48,7 @@ function Router() {
         <Route path='/GiftCard' element={<GiftCard />} />
         <Route path='/Rewards' element={<Rewards />} />
         <Route path='/FindStore' element={<FindStore />} />
+        <Route path='/BuyNow' element={<BuyNow />} />
        
       </Routes>
 

@@ -1,15 +1,14 @@
-body{width: 100%;
+ body{width: 100%;
     height: 100%;
     margin: 0;
     background-color: #fff;
     color: rgba(0,0,0,.87);
     font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
-   
     letter-spacing: -.01em;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-feature-settings: "calt";
-}
+} 
 
 
 .App {
@@ -22,29 +21,48 @@ box-shadow: 0px 0px 3px 0px;
 
 .App-logo {width: 3rem;}
 
-.nav-links 
-{margin: none;
-  font-family: SoDoSans,Helvetica Neue,Helvetica;
-  line-height: 1.5;
+.nav-links {
+    margin: none;
+    line-height: 1.5;
     letter-spacing: -.01em;
-  margin-right: 2rem;
-color: black;
-font-weight: 600;
-position: relative;
+    margin-right: 2rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;}
 
-text-decoration: none;}
 
-.sol{border: none;
-  background-color: rgb(255, 255, 255);
-  font-weight: bold;
-  border: black solid ;
-  border-radius: 3rem;
+.sol{
+  border: none;
+  background: none;
+  border-radius: 5rem;
+  height: 2.3rem;
+  line-height: normal;
   width: 6rem;
-  height: 2rem;
-  position: relative;
-  left: 73rem;
-  bottom:5rem;
+  margin-right: 1rem;
+  border: 1px solid black;
+ position: relative;
+ bottom: 5.5rem;
+ margin-left: 74rem;
+ font-weight: 500;
+ 
 }
+
+ .sol2{
+  border: none;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 5rem;
+  height: 2.3rem;
+  line-height: normal;
+  width: 6rem;
+  border: 1px solid black;
+  position: relative;
+ bottom: 5.5rem;
+ font-weight: 500;
+} 
+
+
+
 
   .nav-link { position: relative;
     left: 66rem;
@@ -57,16 +75,7 @@ text-decoration: none;}
     box-shadow: 0px 0px 3px 0px;
   }
 
-.sol2{border: none;
-  border-radius: 3rem;
-background-color: black;
-color: aliceblue;
-width: 6rem;
-height: 2rem;
-position: relative;
-left: 75rem;
-bottom:5rem;
-text-align: center;}
+
 
 .box{margin-top: 2rem;
   height: 17rem;
@@ -330,6 +339,38 @@ hr{
   align-content: center;
 }
 
-.social{
+.social ul{
   
+  color: black;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 19rem;
+  margin-left: 4rem;
 }
+
+.words {
+  color: black;
+  margin: 0rem;
+  padding-left: 4rem;
+  position: relative;
+  bottom: 3rem;
+
+}
+.words li{
+  float: left;
+  padding: 16px;
+}
+
+.footer2 p{
+  position: relative;
+  top: 2rem;
+  right: 59rem;
+}
+
+
+
+
+
+
+
